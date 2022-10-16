@@ -38,17 +38,7 @@ body{
 
 
 /* header section design start  */
-#menu-bars{
-    position: fixed;
-    z-index: 10000;
-    top: 1rem;
-    left: 1rem;
-    padding: 1rem 1.5rem;
-    border-radius: .5rem;
-    color: #fff;
-    background-color: var(--green);
-    cursor: pointer;
-}
+
 header{
     position: fixed;
     top: 0;
@@ -60,6 +50,20 @@ header{
     background-color: #fff;
     z-index: 1000;
 }
+/* menu icon  */
+#menu-bars{
+    position: fixed;
+    z-index: 10000;
+    top: 1rem;
+    left: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    color: #fff;
+    background-color: var(--green);
+    cursor: pointer;
+    font-size: 2rem;
+}
+/* nev Bar  */
 header .nav-bar{
     writing-mode: vertical-lr;
     padding: 1.5rem;
@@ -71,4 +75,54 @@ header .nav-bar a{
 }
 header .nav-bar a:hover{
     color: var(--green);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query --- responsive design  */
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+    body{
+        padding-right: 0;
+    }
+    header{
+        width: 100%;
+    }
+    #menu-bars{
+        display: initial;
+    }
+    header .nav-bar{
+        writing-mode: horizontal-tb;
+    }
+    header .nav-bar a{
+        display: block;
+        font-size: 3rem;
+    }
+}
+@media (max-width: 450px) {
+
 }
