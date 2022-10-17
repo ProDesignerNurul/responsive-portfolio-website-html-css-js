@@ -80,6 +80,7 @@ header{
     background-color: var(--green);
     cursor: pointer;
     font-size: 2rem;
+    display: none;
 }
 /* nev Bar  */
 header .nav-bar{
